@@ -12,11 +12,12 @@ class Image(Resource):
         image = request.files.to_dict() #convert multidict to dict
         print(image.keys())
         file_name = image["Input"].filename
+	inputFolder = "OSC-Project-EmoRecog/Input"
 
-        if not os.path.isdir("input"):
-            os.mkdir("input")
+        if not os.path.isdir(inputFolder):
+            os.mkdir(inputFolder)
 
-        image["Input"].save("input/"+file_name)
+        image["Input"].save(inputFolder+file_name)
         
         with open('static/result.txt') as text:
             res = text.readline().split()
