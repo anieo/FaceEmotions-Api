@@ -13,10 +13,10 @@ class Image(Resource):
         print(image.keys())
         file_name = image["Input"].filename
 
-        if not os.path.isdir("images"):
-            os.mkdir("images")
+        if not os.path.isdir("input"):
+            os.mkdir("input")
 
-        image["Input"].save("images/"+file_name)
+        image["Input"].save("input/"+file_name)
         
         with open('static/result.txt') as text:
             res = text.readline().split()
