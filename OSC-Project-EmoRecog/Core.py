@@ -108,8 +108,8 @@ for face in detected_faces:
             cv2.putText(frame, "Surprise", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 2, 155, 10)
         elif prediction_result == 6:
             cv2.putText(frame, "Neutral", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 2, 155, 10)
-        cv2.imwrite(path, frame)
-        file = open(path + ".txt", "w")
+        cv2.imwrite('/home/mohamed/temp/FaceEmotions-Api/static/'+file, frame)
+        file = open("/home/mohamed/temp/FaceEmotions-Api/static/result" + ".txt", "w")
         file.write(str(prediction_result[0]))
         file.close()
 
