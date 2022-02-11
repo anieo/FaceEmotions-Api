@@ -3,7 +3,7 @@ asn1crypto==0.24.0
 astor==0.7.1
 backports.weakref==1.0.post1
 Cheetah==2.4.4
-cryptography==2.1.4
+cryptography==3.2
 dnspython==1.15.0
 enum34==1.1.6
 funcsigs==1.0.2
