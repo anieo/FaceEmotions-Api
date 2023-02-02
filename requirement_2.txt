@@ -41,4 +41,4 @@ termcolor==1.1.0
 Theano==1.0.4
 travis==0.0.3
 virtualenv==16.4.0
-Werkzeug==0.15.3
+Werkzeug==0.15.5
